@@ -14,17 +14,24 @@ class ListNode:
         self.next = next
 
 class Solution:
-    def mergeNodes(head: Optional[ListNode]):
-        sum = 0
-        array = []
-        ans = []
-        for head.val in head:
-            if head.next == 0 and sum !=0:
-                ans.append(sum)
-                sum = 0
-                continue
-            if head.next != 0:
-                sum += head.val
-        return ans
+    def mergeNodes(self,head: Optional[ListNode]):
+        node = ListNode(head)
+        array =[]
+        print(node)
+        if self.val == 0:
+            array.append(self.head)
+            print(array)
+        # data = head
+        # sum = 0
+        # array = []
+        # ans = []
+        # for i in data:
+        #     if i == 0 and sum !=0:
+        #         ans.append(sum)
+        #         sum = 0
+        #         continue
+        #     if i != 0:
+        #         sum += i
+        # return ans
 
-print(Solution.mergeNodes(head=[0,1,0,3,0,2,2,0]))
+print(Solution.mergeNodes(self=ListNode, head=[0,1,0,3,0,2,2,0]))
